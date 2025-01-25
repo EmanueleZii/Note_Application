@@ -1,0 +1,83 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: linear-gradient(to right, #f0f7ff, #fef6e4); /* Colori pastello */
+}
+
+#main {
+    min-height: 100vh;
+    padding-bottom: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+#addbtn {
+    position: fixed;
+    right: 10px;
+    top: 10px;
+    background-color: #4caf50; /* Verde pastello */
+    border: none;
+    padding: 10px;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    outline: none;
+}
+
+#addbtn:hover {
+    background-color: #43a047; /* Verde più intenso */
+}
+
+.note {
+    background: #ffffff; /* Bianco puro */
+    margin: 15px;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Aggiunge profondità */
+}
+
+.tool {
+    background-color: #3f51b5; /* Blu pastello */
+    color: white;
+    padding: 5px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.tool i {
+    padding: 5px;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.tool i:hover {
+    color: #ffb74d; /* Arancione chiaro */
+}
+
+.note textarea {
+    width: 300px;
+    border: none;
+    min-height: 220px;
+    resize: none;
+    padding: 10px;
+    font-size: 16px;
+    color: #333333; /* Grigio scuro */
+    background-color: #e3f2fd; /* Blu chiaro */
+    border-radius: 0px 0px 10px 10px;
+}
+
+.note textarea:hover {
+    background-color: #bbdefb; /* Blu più chiaro */
+}
+
+.note textarea:focus {
+    outline: none;
+    background-color: #3f51b5; /* Lilla chiaro */
+}
